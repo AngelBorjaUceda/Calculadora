@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <meta charset="UTF-8">
+   <title>JQuerry</title>
+</head>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" type="text/javascript"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<body>
+
+<form action="">
+    <label for="">Number 1: <br><input id="number1" type="Number"/></label><br>
+    <label for="">Number 2: <br><input id="number2" type="Number"/></label><br>
+    <label for="">Total: <br><input id="total" type="text"/></label><br>
+
+
+
+    <input type="button" value="suma" onclick="sumar()"/>
+    <input type="button" value="resta" onclick="restar()"/><br>
+    <input type="button" value="multiplicacion" onclick="multiplicar()"/>
+    <input type="button" value="division" onclick="dividir()"/>
+</form>
+
+<script>
+
+function sumar() {
+    var primero = Number($("#number1").val());
+    var segundo = Number($("#number2").val());
+    var suma = primero + segundo;
+    var resultado = $("#total").val(suma);
+}
+
+
+
+function restar() {
+    var primero = Number($("#number1").val());
+    var segundo = Number($("#number2").val());
+    var resta = primero - segundo;
+    var resultado = $("#total").val(resta);
+}
+
+
+function dividir() {
+    var primero = Number($("#number1").val());
+    var segundo = Number($("#number2").val());
+    var division = primero / segundo;
+    var resultado = $("#total").val(division);
+}
+
+
+
+
+function multiplicar() {
+    var primero = Number($("#number1").val());
+    var segundo = Number($("#number2").val());
+    var multiplicacion = primero * segundo;
+    var resultado = $("#total").val(multiplicacion);
+}
+
+
+</script>
+</body>
+
+</html>
